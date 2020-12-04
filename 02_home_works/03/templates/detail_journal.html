@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <h2>
+            {{journal.journal_name}}
+        </h2>
+        <h3>
+            By : {{journal.journal_editor}}
+        </h3>
+        <p>
+           Total journal pages: {{journal.journal_pages}}
+        </p>
+{% endblock content %}

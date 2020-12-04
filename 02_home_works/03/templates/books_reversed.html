@@ -1,0 +1,21 @@
+<!-- templates/books.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Books reversed page</h1>
+
+<ul>
+    {% for book in books_reversed %}
+        <h2>
+            <a href="{% url 'detail_book' book.pk %}">{{book.book_name}}</a>
+        </h2>
+        <p>
+            Written by: {{book.book_author}}
+        </p>
+        <p>
+          Rating = {{book.book_rating}}
+        </p>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

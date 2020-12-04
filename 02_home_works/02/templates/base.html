@@ -1,0 +1,14 @@
+<!-- templates/base.html -->
+<header>
+    <a href="{% url 'home' %}">home</a>
+    |
+    <a href="{% url 'books' %}">books</a>
+    |
+    <a href="{% url 'journals' %}">journals</a>
+    |
+    <a href="{% url 'books_reversed' %}">books_reversed</a>
+    |
+    <a href="{% url 'journals_reversed' %}">journals_reversed</a>
+</header>
+{% block content %}
+{% endblock content %}

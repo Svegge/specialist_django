@@ -1,0 +1,21 @@
+<!-- templates/journals.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Journals reversed page</h1>
+
+<ul>
+    {% for journal in journals_reversed %}
+        <h2>
+            <a href="{% url 'detail_journal' journal.pk %}">{{journal.journal_name}}</a>
+        </h2>
+        <p>
+            Edited by: {{journal.journal_editor}}
+        </p>
+        <p>
+          Total pages = {{journal.journal_pages}}
+        </p>
+    {% endfor %}
+</ul>
+
+{% endblock content %}
