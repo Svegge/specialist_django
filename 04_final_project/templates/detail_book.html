@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <h2>
+            {{book.book_name}}
+        </h2>
+        <h3>
+            By : {{book.book_author}}
+        </h3>
+        <p>
+           The Book rating is: {{book.book_rating}}
+        </p>
+{% endblock content %}
